@@ -1,0 +1,862 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- ============================================================
+       SEO / Metadata — resume-driven (KAVIN P, DevOps Engineer)
+       ============================================================ -->
+  <title>KAVIN P — DevOps Engineer | AWS | Cloud | Automation</title>
+  <meta name="description" content="KAVIN P — Entry-level DevOps Engineer from Karur, Tamil Nadu. Hands-on with AWS cloud infrastructure (EC2, S3, IAM, Cognito, CloudWatch), Linux, Docker and GitHub Actions CI/CD. Building reliable, scalable cloud deployments." />
+  <meta name="author" content="KAVIN P" />
+  <meta name="keywords" content="DevOps Engineer, AWS, Cloud, Docker, GitHub Actions, CI/CD, Linux, Automation, Kavin, Portfolio" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="KAVIN P — DevOps Engineer | AWS | Cloud | Automation" />
+  <meta property="og:description" content="Entry-level DevOps Engineer focused on AWS cloud infrastructure, Docker containerization, CI/CD automation and secure application deployment." />
+  <!-- Set this to your live portfolio URL. -->
+  <meta property="og:url" content="https://your-domain.com/" />
+  <!-- Replace assets/images/og-image.png with a 1200x630 preview image to complete Open Graph. -->
+  <meta property="og:image" content="assets/images/og-image.png" />
+  <meta property="og:site_name" content="KAVIN P — DevOps Portfolio" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="theme-color" content="#050505" />
+
+  <!-- Favicon (inline SVG placeholder — replace with assets/images/favicon.svg if you like) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23080808'/%3E%3Ctext x='32' y='44' font-family='monospace' font-size='34' font-weight='700' fill='%23ff9900' text-anchor='middle'%3EK%3C/text%3E%3C/svg%3E" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ================= Scroll progress + custom cursor ================= -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <div class="cursor cursor-dot" id="cursorDot" aria-hidden="true"></div>
+  <div class="cursor cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ================= Icon sprite (inline SVGs, no icon library) ================= -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+    <symbol id="icon-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></symbol>
+    <symbol id="icon-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="7 10 12 15 17 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="15" x2="12" y2="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-external" viewBox="0 0 24 24"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="15 3 21 3 21 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="10" y1="14" x2="21" y2="3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><line x1="5" y1="12" x2="19" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="12 5 19 12 12 19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-arrow-down" viewBox="0 0 24 24"><line x1="12" y1="5" x2="12" y2="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><polyline points="19 12 12 19 5 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-terminal" viewBox="0 0 24 24"><polyline points="4 17 10 11 4 5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="19" x2="20" y2="19" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-code" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="8 6 2 12 8 18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-cloud" viewBox="0 0 24 24"><path d="M17.5 19a4.5 4.5 0 1 0-.9-8.91A6 6 0 1 0 6.5 19H17.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-docker" viewBox="0 0 24 24"><path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="3.29 7 12 12 20.71 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="22" x2="12" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-git" viewBox="0 0 24 24"><line x1="6" y1="3" x2="6" y2="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="18" cy="6" r="3" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="6" cy="18" r="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M18 9a9 9 0 0 1-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-shield" viewBox="0 0 24 24"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-zap" viewBox="0 0 24 24"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="9" ry="3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-cpu" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="9" y="9" width="6" height="6" fill="none" stroke="currentColor" stroke-width="2"/><line x1="9" y1="1" x2="9" y2="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="15" y1="1" x2="15" y2="4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="9" y1="20" x2="9" y2="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="15" y1="20" x2="15" y2="23" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="20" y1="9" x2="23" y2="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="20" y1="14" x2="23" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="9" x2="4" y2="9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="1" y1="14" x2="4" y2="14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-server" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><rect x="2" y="14" width="20" height="8" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="6" y1="6" x2="6.01" y2="6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="6" y1="18" x2="6.01" y2="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-rocket" viewBox="0 0 24 24"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-award" viewBox="0 0 24 24"><circle cx="12" cy="8" r="6" fill="none" stroke="currentColor" stroke-width="2"/><path d="M15.477 12.89 17 22l-5-3-5 3 1.523-9.11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-graduation" viewBox="0 0 24 24"><path d="M22 10 12 5 2 10l10 5 10-5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M6 12v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-upload" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><polyline points="17 8 12 3 7 8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><line x1="12" y1="3" x2="12" y2="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-menu" viewBox="0 0 24 24"><line x1="3" y1="6" x2="21" y2="6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="12" x2="21" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="3" y1="18" x2="21" y2="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-x" viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="6" y1="6" x2="18" y2="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-layers" viewBox="0 0 24 24"><path d="m12.83 2.18a2 2 0 0 0-1.66 0L2.6 6.08a1 1 0 0 0 0 1.83l8.58 3.91a2 2 0 0 0 1.66 0l8.58-3.9a1 1 0 0 0 0-1.83Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m22 17.65-9.17 4.16a2 2 0 0 1-1.66 0L2 17.65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="m22 12.65-9.17 4.16a2 2 0 0 1-1.66 0L2 12.65" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-braces" viewBox="0 0 24 24"><path d="M8 3H7a2 2 0 0 0-2 2v5a2 2 0 0 1-2 2 2 2 0 0 1 2 2v5c0 1.1.9 2 2 2h1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M16 21h1a2 2 0 0 0 2-2v-5c0-1.1.9-2 2-2a2 2 0 0 1-2-2V5a2 2 0 0 0-2-2h-1" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-eye" viewBox="0 0 24 24"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="12" r="3" fill="none" stroke="currentColor" stroke-width="2"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><polyline points="12 6 12 12 16 14" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-fire" viewBox="0 0 24 24"><path d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.072-2.143-.224-4.054 2-6 .5 2.5 2 4.9 4 6.5 2 1.6 3 3.5 3 5.5a7 7 0 1 1-14 0c0-1.153.433-2.294 1-3a2.5 2.5 0 0 0 2.5 2.5z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="icon-monitor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><line x1="8" y1="21" x2="16" y2="21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="12" y1="17" x2="12" y2="21" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="icon-harddrive" viewBox="0 0 24 24"><line x1="22" y1="12" x2="2" y2="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M5.45 5.11 2 12v6a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-6l-3.45-6.89A2 2 0 0 0 16.76 4H7.24a2 2 0 0 0-1.79 1.11z" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="6" y1="16" x2="6.01" y2="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><line x1="10" y1="16" x2="10.01" y2="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+  </svg>
+
+  <!-- ================= NAVIGATION ================= -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-inner">
+      <a href="#home" class="logo" aria-label="KAVIN P — home">
+        <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><use href="#icon-cloud"/></svg></span>
+        <span class="logo-text">KAVIN<span class="logo-dot">.</span>P</span>
+      </a>
+
+      <nav class="site-nav" id="siteNav" aria-label="Primary">
+        <ul class="nav-list">
+          <li><a class="nav-link" href="#home">Home</a></li>
+          <li><a class="nav-link" href="#about">About</a></li>
+          <li><a class="nav-link" href="#skills">Skills</a></li>
+          <li><a class="nav-link" href="#projects">Projects</a></li>
+          <li><a class="nav-link" href="#experience">Experience</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn-primary nav-cta" href="assets/resume.pdf" download>
+          <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-download"/></svg>
+          Resume
+        </a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="siteNav" aria-label="Toggle navigation menu">
+        <svg class="icon-menu" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#icon-menu"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#icon-x"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero section" id="home">
+      <!-- ambient background -->
+      <div class="hero-bg" aria-hidden="true">
+        <div class="grid-overlay"></div>
+        <div class="aurora aurora-a"></div>
+        <div class="aurora aurora-b"></div>
+        <div class="aurora aurora-c"></div>
+        <div class="particles" id="particles"></div>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-copy reveal">
+          <p class="hero-eyebrow">
+            <span class="status-dot" aria-hidden="true"></span>
+            Entry-Level DevOps Engineer &middot; Open to opportunities
+          </p>
+          <h1 class="hero-name">KAVIN&nbsp;P</h1>
+          <h2 class="hero-role">DevOps Engineer &middot; AWS &middot; Cloud &middot; Automation</h2>
+          <p class="hero-tagline">
+            Building reliable cloud infrastructure, automated deployments and scalable
+            applications with AWS, Docker and CI/CD.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary" data-magnetic>
+              <span>View Projects</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-arrow-down"/></svg>
+            </a>
+            <a href="#contact" class="btn btn-ghost" data-magnetic>
+              <span>Contact Me</span>
+            </a>
+            <!-- Replace assets/resume.pdf with your latest resume file to enable the download. -->
+            <a href="assets/resume.pdf" download class="btn btn-outline" data-magnetic>
+              <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-download"/></svg>
+              <span>Download Resume</span>
+            </a>
+          </div>
+
+          <div class="hero-social" aria-label="Social links">
+            <!-- Replace href values below with your real GitHub / LinkedIn profile URLs -->
+            <a class="social-chip" href="#" rel="noopener noreferrer" aria-label="GitHub profile (add your URL)" data-magnetic>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-github"/></svg>
+            </a>
+            <a class="social-chip" href="#" rel="noopener noreferrer" aria-label="LinkedIn profile (add your URL)" data-magnetic>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-linkedin"/></svg>
+            </a>
+            <a class="social-chip" href="mailto:kavin22cs024@gmail.com" aria-label="Send an email to Kavin" data-magnetic>
+              <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-mail"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right column: terminal + pipeline visual -->
+        <div class="hero-visual reveal" aria-hidden="true">
+
+          <!-- Terminal -->
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span class="t-dot t-dot-r"></span>
+              <span class="t-dot t-dot-y"></span>
+              <span class="t-dot t-dot-g"></span>
+              <span class="terminal-title">kavin@devops: ~</span>
+            </div>
+            <div class="terminal-body" id="terminalBody" aria-label="Animated terminal demonstrating Kavin's stack"></div>
+          </div>
+
+          <!-- Pipeline visual -->
+          <div class="pipeline">
+            <h3 class="pipeline-label"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#icon-layers"/></svg> Deployment Pipeline</h3>
+            <ul class="pipeline-flow">
+              <li class="pipe-node">
+                <span class="pipe-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-code"/></svg></span>
+                <span class="pipe-name">Developer</span>
+              </li>
+              <li class="pipe-link"><span class="pipe-dot"></span><i class="pipe-line"></i></li>
+              <li class="pipe-node">
+                <span class="pipe-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-git"/></svg></span>
+                <span class="pipe-name">GitHub</span>
+              </li>
+              <li class="pipe-link"><span class="pipe-dot"></span><i class="pipe-line"></i></li>
+              <li class="pipe-node">
+                <span class="pipe-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-braces"/></svg></span>
+                <span class="pipe-name">GitHub Actions</span>
+              </li>
+              <li class="pipe-link"><span class="pipe-dot"></span><i class="pipe-line"></i></li>
+              <li class="pipe-node">
+                <span class="pipe-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-docker"/></svg></span>
+                <span class="pipe-name">Docker</span>
+              </li>
+              <li class="pipe-link"><span class="pipe-dot"></span><i class="pipe-line"></i></li>
+              <li class="pipe-node pipe-node-aws">
+                <span class="pipe-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-cloud"/></svg></span>
+                <span class="pipe-name">AWS</span>
+              </li>
+              <li class="pipe-link"><span class="pipe-dot"></span><i class="pipe-line"></i></li>
+              <li class="pipe-node pipe-node-app">
+                <span class="pipe-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-rocket"/></svg></span>
+                <span class="pipe-name">Application</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <a href="#about" class="hero-scroll" aria-label="Scroll to About section">
+        <span class="mouse" aria-hidden="true"><span class="mouse-wheel"></span></span>
+        <span class="scroll-label">Scroll</span>
+      </a>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">01</span>
+          <p class="section-kicker">About</p>
+          <h2 class="section-title">Cloud-focused engineer with a DevOps mindset</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card reveal">
+            <h3 class="about-h">Career Objective</h3>
+            <p>
+              Entry-level DevOps enthusiast with hands-on experience in AWS cloud infrastructure
+              (<strong>EC2</strong>, <strong>S3</strong>, <strong>IAM</strong>, <strong>Cognito</strong>,
+              <strong>CloudWatch</strong>), Linux system administration, and Docker containerization —
+              with working exposure to <strong>GitHub Actions</strong> CI/CD workflows.
+            </p>
+            <p>
+              Skilled in deploying secure, scalable applications and eager to build and manage CI/CD
+              pipelines, automate infrastructure deployments, and support system performance,
+              reliability, and security as a <strong>DevOps Engineer</strong>.
+            </p>
+            <div class="about-points">
+              <span class="about-point"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-check"/></svg> Secure, scalable deployments</span>
+              <span class="about-point"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-check"/></svg> CI/CD pipeline development</span>
+              <span class="about-point"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-check"/></svg> Infrastructure automation</span>
+              <span class="about-point"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-check"/></svg> Cloud security best practices</span>
+            </div>
+          </div>
+
+          <div class="about-stats reveal">
+            <div class="stat">
+              <span class="stat-value">5+</span>
+              <span class="stat-label">AWS services in hands-on practice</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Hackathons participated / awarded</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">2</span>
+              <span class="stat-label">End-to-end projects shipped</span>
+            </div>
+            <div class="stat">
+              <span class="stat-value">1</span>
+              <span class="stat-label">National-level hackathon award</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">02</span>
+          <p class="section-kicker">Skills</p>
+          <h2 class="section-title">Tools &amp; technologies I work with</h2>
+        </div>
+
+        <div class="skills-grid">
+          <!-- Devops & CI/CD -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card-head">
+              <span class="skill-icon" style="--sc:#22d3ee"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#icon-braces"/></svg></span>
+              <h3>DevOps &amp; CI/CD</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span>Docker</span> <em>Containerization</em></li>
+              <li><span>GitHub Actions</span> <em>CI/CD workflows</em></li>
+              <li><span>CI/CD</span> <em>Fundamentals</em></li>
+            </ul>
+          </article>
+
+          <!-- Cloud AWS -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card-head">
+              <span class="skill-icon" style="--sc:#ff9900"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#icon-cloud"/></svg></span>
+              <h3>Cloud — AWS</h3>
+            </div>
+            <ul class="skill-list chips">
+              <li><span>EC2</span></li>
+              <li><span>S3</span></li>
+              <li><span>RDS</span></li>
+              <li><span>DynamoDB</span></li>
+              <li><span>VPC</span></li>
+              <li><span>Lambda</span></li>
+              <li><span>IAM</span></li>
+              <li><span>CloudWatch</span></li>
+              <li><span>Cognito</span></li>
+            </ul>
+          </article>
+
+          <!-- Operating Systems -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card-head">
+              <span class="skill-icon" style="--sc:#a78bfa"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#icon-cpu"/></svg></span>
+              <h3>Operating Systems</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span>Linux</span> <em>Commands &amp; sysadmin</em></li>
+              <li><span>File Permissions</span> <em>Security &amp; access</em></li>
+              <li><span>Process Management</span> <em>Monitoring &amp; tuning</em></li>
+            </ul>
+          </article>
+
+          <!-- Programming -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card-head">
+              <span class="skill-icon" style="--sc:#3b82f6"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#icon-code"/></svg></span>
+              <h3>Programming Languages</h3>
+            </div>
+            <ul class="skill-list chips">
+              <li><span>Python</span></li>
+              <li><span>JavaScript</span></li>
+              <li><span>HTML</span></li>
+              <li><span>CSS</span></li>
+              <li><span>PHP</span></li>
+            </ul>
+          </article>
+
+          <!-- Databases -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card-head">
+              <span class="skill-icon" style="--sc:#34d399"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#icon-database"/></svg></span>
+              <h3>Databases</h3>
+            </div>
+            <ul class="skill-list chips">
+              <li><span>MySQL</span></li>
+            </ul>
+          </article>
+
+          <!-- Tools -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card-head">
+              <span class="skill-icon" style="--sc:#f472b6"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#icon-monitor"/></svg></span>
+              <h3>Tools</h3>
+            </div>
+            <ul class="skill-list chips">
+              <li><span>GitHub</span></li>
+              <li><span>VS Code</span></li>
+              <li><span>Antigravity</span></li>
+            </ul>
+          </article>
+
+          <!-- Core Skills -->
+          <article class="skill-card reveal" data-tilt>
+            <div class="skill-card-head">
+              <span class="skill-icon" style="--sc:#fbbf24"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><use href="#icon-user"/></svg></span>
+              <h3>Core Skills</h3>
+            </div>
+            <ul class="skill-list">
+              <li><span>Cloud Fundamentals</span> <em>Architecture &amp; services</em></li>
+              <li><span>Problem Solving</span> <em>Systematic &amp; analytical</em></li>
+              <li><span>Team Collaboration</span> <em>Cross-functional delivery</em></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= DEVOPS / AWS EXPERTISE ================= -->
+    <section class="section" id="devops">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">03</span>
+          <p class="section-kicker">DevOps &amp; AWS</p>
+          <h2 class="section-title">How I deploy — from code to cloud</h2>
+        </div>
+
+        <div class="devops-wrap reveal">
+          <!-- Central animated pipeline -->
+          <div class="pipeline-track" aria-hidden="true"><span class="track-dot"></span></div>
+
+          <ol class="devops-flow">
+            <li class="flow-step">
+              <div class="flow-node">
+                <span class="flow-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#icon-code"/></svg></span>
+                <div><h3>Code</h3><p>Application code and Dockerfiles written in the editor.</p></div>
+              </div>
+            </li>
+            <li class="flow-step">
+              <div class="flow-node">
+                <span class="flow-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#icon-git"/></svg></span>
+                <div><h3>GitHub</h3><p>Source control, versioning and collaboration.</p></div>
+              </div>
+            </li>
+            <li class="flow-step">
+              <div class="flow-node">
+                <span class="flow-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#icon-braces"/></svg></span>
+                <div><h3>GitHub Actions</h3><p>CI/CD workflow builds, tests and deploys on every push.</p></div>
+              </div>
+            </li>
+            <li class="flow-step">
+              <div class="flow-node">
+                <span class="flow-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#icon-docker"/></svg></span>
+                <div><h3>Docker</h3><p>Consistent, portable containers from development to production.</p></div>
+              </div>
+            </li>
+            <li class="flow-step flow-step-aws">
+              <div class="flow-node">
+                <span class="flow-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#icon-cloud"/></svg></span>
+                <div><h3>AWS Infrastructure</h3><p>Secure, scalable cloud services with least-privilege IAM.</p></div>
+              </div>
+            </li>
+            <li class="flow-step">
+              <div class="flow-node">
+                <span class="flow-icon"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><use href="#icon-eye"/></svg></span>
+                <div><h3>Monitoring</h3><p>CloudWatch observability for performance and reliability.</p></div>
+              </div>
+            </li>
+          </ol>
+
+          <!-- AWS service map -->
+          <div class="aws-map" aria-label="AWS services used">
+            <p class="aws-map-label"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#icon-cloud"/></svg> AWS Services in practice</p>
+            <div class="aws-chips">
+              <span class="aws-chip"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-server"/></svg> EC2</span>
+              <span class="aws-chip"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-harddrive"/></svg> S3</span>
+              <span class="aws-chip"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-shield"/></svg> IAM</span>
+              <span class="aws-chip"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-user"/></svg> Cognito</span>
+              <span class="aws-chip"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-zap"/></svg> Lambda</span>
+              <span class="aws-chip"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-database"/></svg> RDS</span>
+              <span class="aws-chip"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-database"/></svg> DynamoDB</span>
+              <span class="aws-chip"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-git"/></svg> VPC</span>
+              <span class="aws-chip"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-eye"/></svg> CloudWatch</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">04</span>
+          <p class="section-kicker">Projects</p>
+          <h2 class="section-title">Work I've built &amp; shipped</h2>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- Project 1: AWS Photos -->
+          <article class="project-card reveal" data-tilt>
+            <div class="project-visual project-visual-photos" role="img" aria-label="Stylized preview of the AWS Photos serverless photo management app interface">
+              <!-- CSS-built miniature dashboard preview -->
+              <div class="app-window">
+                <div class="app-win-bar"><span class="app-dot"></span><span class="app-dot"></span><span class="app-dot"></span><span class="app-win-title">AWS Photos</span></div>
+                <div class="app-body">
+                  <div class="app-sidebar">
+                    <span class="app-logo"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#icon-cloud"/></svg></span>
+                    <span class="app-nav-item active"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><use href="#icon-upload"/></svg></span>
+                    <span class="app-nav-item"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><use href="#icon-user"/></svg></span>
+                  </div>
+                  <div class="app-main">
+                    <div class="app-grid">
+                      <span class="photo-tile" style="--h:70%"></span>
+                      <span class="photo-tile" style="--h:55%"></span>
+                      <span class="photo-tile" style="--h:80%"></span>
+                      <span class="photo-tile" style="--h:48%"></span>
+                      <span class="photo-tile" style="--h:66%"></span>
+                      <span class="photo-tile" style="--h:74%"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- animated auth flow -->
+              <div class="app-flow-badges" aria-hidden="true">
+                <span class="flow-badge">Login</span>
+                <span class="flow-badge">Auth</span>
+                <span class="flow-badge">S3</span>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-date"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><use href="#icon-clock"/></svg> Aug 2026 — Present</span>
+                <span class="project-tag">Serverless</span>
+              </div>
+              <h3 class="project-title">AWS Photos</h3>
+              <p class="project-desc">
+                Serverless photo management application with secure user registration, email
+                verification, authentication, and photo upload / download / delete built on
+                <strong>AWS Cognito</strong> and <strong>Amazon S3</strong>. Implements Cognito User Pools,
+                Identity Pools and IAM roles for temporary credentials and JWT-based authentication.
+              </p>
+              <ul class="project-points">
+                <li>JWT-based authentication with temporary AWS credentials</li>
+                <li>IAM least-privilege access &amp; cloud security best practices</li>
+                <li>Dockerized app with GitHub Actions CI/CD exploration</li>
+                <li>CloudWatch monitoring &amp; S3 storage management</li>
+              </ul>
+              <div class="project-tech" aria-label="Technologies">
+                <span class="tech-badge">AWS Cognito</span>
+                <span class="tech-badge">IAM</span>
+                <span class="tech-badge">S3</span>
+                <span class="tech-badge">Docker</span>
+                <span class="tech-badge">GitHub Actions</span>
+                <span class="tech-badge">JavaScript</span>
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+              </div>
+              <div class="project-links">
+                <!-- Replace href below with the actual repository URL -->
+                <a href="#" class="btn btn-ghost btn-sm" rel="noopener noreferrer" data-magnetic>
+                  <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><use href="#icon-github"/></svg> Code
+                </a>
+                <a href="#" class="btn btn-outline btn-sm" rel="noopener noreferrer" data-magnetic>
+                  Live Demo <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#icon-external"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Malli Coffee House -->
+          <article class="project-card reveal" data-tilt>
+            <div class="project-visual project-visual-coffee" role="img" aria-label="Stylized preview of the Malli Coffee House café business website">
+              <div class="cafe-window">
+                <div class="cafe-hero">
+                  <div class="cafe-hero-shade"></div>
+                  <span class="cafe-name">Malli Coffee House</span>
+                  <span class="cafe-tag">18 Years of Heritage</span>
+                  <span class="cafe-btn">Order Now</span>
+                </div>
+                <div class="cafe-cards">
+                  <span class="cafe-card-item"><i></i><b></b><u></u></span>
+                  <span class="cafe-card-item"><i></i><b></b><u></u></span>
+                  <span class="cafe-card-item"><i></i><b></b><u></u></span>
+                </div>
+              </div>
+            </div>
+
+            <div class="project-body">
+              <div class="project-meta">
+                <span class="project-date"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><use href="#icon-clock"/></svg> May 2026 — Present</span>
+                <span class="project-tag">Business Website</span>
+              </div>
+              <h3 class="project-title">Malli Coffee House</h3>
+              <p class="project-desc">
+                Modern business website for a café and mini-restaurant with an
+                <strong>18-year heritage</strong>. Replaces an outdated online presence with a clean,
+                customer-facing UI that reflects the brand's legacy — delivered directly to a real
+                business client.
+              </p>
+              <ul class="project-points">
+                <li>Clean, brand-led UI for a real business client</li>
+                <li>Modernized online presence to reflect brand legacy</li>
+                <li>Fast, responsive, customer-facing experience</li>
+              </ul>
+              <div class="project-tech" aria-label="Technologies">
+                <span class="tech-badge">HTML</span>
+                <span class="tech-badge">CSS</span>
+                <span class="tech-badge">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <!-- Replace href below with the actual repository URL -->
+                <a href="#" class="btn btn-ghost btn-sm" rel="noopener noreferrer" data-magnetic>
+                  <svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><use href="#icon-github"/></svg> Code
+                </a>
+                <!-- Replace href below with the live site URL -->
+                <a href="#" class="btn btn-outline btn-sm" rel="noopener noreferrer" data-magnetic>
+                  Live Demo <svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#icon-external"/></svg>
+                </a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE / ACHIEVEMENTS ================= -->
+    <section class="section" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">05</span>
+          <p class="section-kicker">Experience</p>
+          <h2 class="section-title">Achievements &amp; recognition</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card timeline-card-highlight">
+              <div class="timeline-head">
+                <div>
+                  <h3 class="timeline-title">AMD Perspective AI Hackathon</h3>
+                  <p class="timeline-sub">National Level &middot; Apr 2024</p>
+                </div>
+                <span class="timeline-badge"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#icon-award"/></svg> Awarded</span>
+              </div>
+              <p class="timeline-desc">
+                Built an AI-powered assistive solution recognized for usability and real-world impact.
+              </p>
+              <div class="timeline-award">
+                <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-fire"/></svg>
+                Awarded the <strong>AMD UM790 Pro Mini PC</strong> for innovation and performance excellence.
+              </div>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3 class="timeline-title">AWS Photos — Hands-on Cloud Practice</h3>
+                  <p class="timeline-sub">Aug 2026 — Present</p>
+                </div>
+                <span class="timeline-badge badge-cyan"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#icon-cloud"/></svg> Self-directed</span>
+              </div>
+              <p class="timeline-desc">
+                Self-directed DevOps practice: authentication with Cognito, temporary credentials and
+                IAM, S3 storage management, CloudWatch monitoring, Docker containerization and
+                GitHub Actions CI/CD.
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item reveal">
+            <div class="timeline-marker" aria-hidden="true"></div>
+            <div class="timeline-card">
+              <div class="timeline-head">
+                <div>
+                  <h3 class="timeline-title">Malli Coffee House — Client Delivery</h3>
+                  <p class="timeline-sub">May 2026 — Present</p>
+                </div>
+                <span class="timeline-badge badge-cyan"><svg viewBox="0 0 24 24" width="14" height="14" aria-hidden="true"><use href="#icon-user"/></svg> Client</span>
+              </div>
+              <p class="timeline-desc">
+                Designed and delivered a modern business website for a real client, modernizing their
+                online presence while reflecting the brand's 18-year heritage.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION + CERTIFICATIONS + HACKATHONS ================= -->
+    <section class="section" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">06</span>
+          <p class="section-kicker">Education &amp; Growth</p>
+          <h2 class="section-title">Education, certifications &amp; hackathons</h2>
+        </div>
+
+        <div class="edu-wrap">
+          <!-- Education -->
+          <div class="edu-col reveal">
+            <h3 class="col-title"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-graduation"/></svg> Education</h3>
+            <div class="edu-card">
+              <span class="edu-chip chip-orange">B.E.</span>
+              <h4>Computer Science and Engineering</h4>
+              <p class="edu-place">Chettinad College of Engineering and Technology</p>
+              <p class="edu-date"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true"><use href="#icon-clock"/></svg> 2022 — 2026</p>
+            </div>
+          </div>
+
+          <!-- Certifications -->
+          <div class="edu-col reveal">
+            <h3 class="col-title"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-award"/></svg> Certifications</h3>
+            <div class="cert-list">
+              <div class="cert-card">
+                <span class="cert-icon" style="--sc:#ff9900"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-code"/></svg></span>
+                <div>
+                  <h4>Web Development Certification</h4>
+                  <p>Novi Tech &middot; 1-month hands-on training</p>
+                </div>
+              </div>
+              <div class="cert-card">
+                <span class="cert-icon" style="--sc:#3b82f6"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-cpu"/></svg></span>
+                <div>
+                  <h4>Deep Learning Certification</h4>
+                  <p>NPTEL &middot; IIT Ropar</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Hackathons -->
+          <div class="edu-col reveal">
+            <h3 class="col-title"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-fire"/></svg> Hackathons</h3>
+            <div class="hack-list">
+              <div class="hack-card hack-card-win">
+                <span class="hack-rank"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><use href="#icon-award"/></svg></span>
+                <div>
+                  <h4>AMD Perspective AI Hackathon</h4>
+                  <p><span class="hack-pill pill-achieve">Achievement</span> National level &middot; Won AMD UM790 Pro Mini PC</p>
+                </div>
+              </div>
+              <div class="hack-card">
+                <span class="hack-rank hack-rank-plain"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><use href="#icon-zap"/></svg></span>
+                <div>
+                  <h4>Intel Gen-AI Hackathon</h4>
+                  <p><span class="hack-pill">Participant</span></p>
+                </div>
+              </div>
+              <div class="hack-card">
+                <span class="hack-rank hack-rank-plain"><svg viewBox="0 0 24 24" width="15" height="15" aria-hidden="true"><use href="#icon-zap"/></svg></span>
+                <div>
+                  <h4>Smart India Hackathon</h4>
+                  <p><span class="hack-pill">Participant</span></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-index">07</span>
+          <p class="section-kicker">Contact</p>
+          <h2 class="section-title">Let's build something reliable together</h2>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="contact-lede">
+              Open to DevOps, cloud and infrastructure opportunities. Whether it's a CI/CD pipeline,
+              a deployment automation task or a secure cloud architecture — I'd love to talk.
+            </p>
+            <ul class="contact-list">
+              <li>
+                <a class="contact-item" href="mailto:kavin22cs024@gmail.com">
+                  <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-mail"/></svg></span>
+                  <span><strong>Email</strong>kavin22cs024@gmail.com</span>
+                </a>
+              </li>
+              <li>
+                <a class="contact-item" href="tel:+919092027667">
+                  <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-phone"/></svg></span>
+                  <span><strong>Phone</strong>+91 90920 27667</span>
+                </a>
+              </li>
+              <li>
+                <span class="contact-item">
+                  <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-pin"/></svg></span>
+                  <span><strong>Location</strong>Karur, Tamil Nadu, India</span>
+                </span>
+              </li>
+              <li>
+                <!-- Replace href with your real GitHub URL -->
+                <a class="contact-item" href="#" rel="noopener noreferrer" aria-label="GitHub (add your URL)">
+                  <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-github"/></svg></span>
+                  <span><strong>GitHub</strong>github.com/kavin-p</span>
+                </a>
+              </li>
+              <li>
+                <!-- Replace href with your real LinkedIn URL -->
+                <a class="contact-item" href="#" rel="noopener noreferrer" aria-label="LinkedIn (add your URL)">
+                  <span class="contact-icon"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><use href="#icon-linkedin"/></svg></span>
+                  <span><strong>LinkedIn</strong>linkedin.com/in/kavin-p</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="contact-form-wrap reveal">
+            <form class="contact-form" id="contactForm" novalidate>
+              <p class="form-note">
+                This form opens your email app with the message pre-filled — no data is stored.
+              </p>
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cf-name">Name</label>
+                  <input type="text" id="cf-name" name="name" placeholder="Your name" autocomplete="name" required />
+                </div>
+                <div class="form-group">
+                  <label for="cf-email">Email</label>
+                  <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="cf-subject">Subject</label>
+                <input type="text" id="cf-subject" name="subject" placeholder="DevOps opportunity" required />
+              </div>
+              <div class="form-group">
+                <label for="cf-message">Message</label>
+                <textarea id="cf-message" name="message" rows="5" placeholder="Tell me about the role or project…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block" data-magnetic>
+                <span>Send Message</span>
+                <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-arrow-right"/></svg>
+              </button>
+              <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <a href="#home" class="logo">
+          <span class="logo-mark" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><use href="#icon-cloud"/></svg></span>
+          <span class="logo-text">KAVIN<span class="logo-dot">.</span>P</span>
+        </a>
+        <p class="footer-tag">DevOps Engineer &middot; AWS &middot; Cloud &middot; Automation</p>
+        <div class="footer-social" aria-label="Social links">
+          <a href="#" rel="noopener noreferrer" aria-label="GitHub (add your URL)"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><use href="#icon-github"/></svg></a>
+          <a href="#" rel="noopener noreferrer" aria-label="LinkedIn (add your URL)"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><use href="#icon-linkedin"/></svg></a>
+          <a href="mailto:kavin22cs024@gmail.com" aria-label="Email Kavin"><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><use href="#icon-mail"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 KAVIN P. Built with HTML, CSS &amp; vanilla JavaScript.</p>
+        <button class="back-top" id="backTop" aria-label="Back to top"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><use href="#icon-arrow-right"/></svg></button>
+      </div>
+    </div>
+  </footer>
+
+  <noscript>
+    <style>/* Graceful fallback if JavaScript is disabled */
+      .reveal { opacity: 1 !important; transform: none !important; }
+      .terminal-body::after { content: "$ whoami  →  kavin   $ role  →  DevOps Engineer   $ cloud  →  AWS   $ container  →  Docker   $ cicd  →  GitHub Actions"; white-space: pre; color: #a3a3a3; }
+      .cursor, .scroll-progress { display: none; }
+    </style>
+  </noscript>
+
+  <!-- ================= MAIN SCRIPT (vanilla JS) ================= -->
+  <script src="js/script.js"></script>
+</body>
+</html>
